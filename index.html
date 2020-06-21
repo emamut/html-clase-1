@@ -13,12 +13,12 @@
       <div class="row pt-3" :class="isActive(0)">
         <div class="col-12 mb-5">
           <h1>{{ questionsArray[activeQuestion].text }}</h1>
-          <button class="btn btn-primary mr-2 mt-3" @click="checkActiveQuestion()" v-for="answer in questionsArray[activeQuestion].answers">{{ answer }}</button>
+          <button class="btn btn-primary mr-2 mt-3" @click="checkActiveQuestion(answer)" v-for="answer in questionsArray[activeQuestion].answers">{{ answer }}</button>
         </div>
       </div>
       <div class="row pt-3" :class="isActive(1)">
         <div class="col">
-          A tu papá lo quieres XXX pues es XXX
+          A tu papá lo quieres <strong>{{ answersArray[1] }}</strong> pues es <strong>{{ answersArray[0] }}</strong>
         </div>
       </div>
     </div>

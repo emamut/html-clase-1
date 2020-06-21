@@ -3,7 +3,8 @@ var app = new Vue({
   data: {
     questionsArray: [{}],
     activeQuestion: 0,
-    activeSection: 0
+    activeSection: 0,
+    answersArray: []
   },
   mounted() {
     var self = this
@@ -13,7 +14,9 @@ var app = new Vue({
     })
   },
   methods: {
-    checkActiveQuestion: function () {
+    checkActiveQuestion: function (answer) {
+      this.answersArray.push(answer)
+
       if(this.activeQuestion < this.questionsArray.length - 1)
         this.activeQuestion ++
       else
