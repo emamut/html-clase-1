@@ -1,0 +1,19 @@
+{
+  "name": "html-clase-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \".\"  --ignore \".git\" --no-open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emamut/html-clase-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emamut/html-clase-1/issues"
+  },
+  "homepage": "https://github.com/emamut/html-clase-1#readme"
+}

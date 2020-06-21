@@ -1,0 +1,12 @@
+{
+  "questions": [
+    {
+      "text": "¿Como es tu papá?",
+      "answers": ["Serio", "Divertido", "Audaz", "Sabio"]
+    },
+    {
+      "text": "¿Cuánto quieres a tu papá?",
+      "answers": ["Poco", "Normal", "Mucho", "Demasiado"]
+    }
+  ]
+}
