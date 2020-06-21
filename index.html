@@ -6,13 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <div class="container" id="app">
-      <div class="row pt-3">
-        <div class="col-12 mb-5" v-for="question in questionsArray">
-          <h1>{{ question.text }}</h1>
-          <button class="btn btn-primary mr-2 mt-3" v-for="answer in question.answers">{{ answer }}</button>
+    <div class="container" id="app" v-cloak>
+      <div class="row pt-3" :class="isActive(0)">
+        <div class="col-12 mb-5">
+          <h1>{{ questionsArray[activeQuestion].text }}</h1>
+          <button class="btn btn-primary mr-2 mt-3" @click="checkActiveQuestion()" v-for="answer in questionsArray[activeQuestion].answers">{{ answer }}</button>
+        </div>
+      </div>
+      <div class="row pt-3" :class="isActive(1)">
+        <div class="col">
+          A tu papá lo quieres XXX pues es XXX
         </div>
       </div>
     </div>
