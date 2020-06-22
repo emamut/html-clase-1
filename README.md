@@ -1,4 +1,4 @@
-# Clase 1: de Bootsrap y VueJS
+# Clase 1: de Bootstrap y VueJS
 Basado en [¿Qué heredaste de papá?](https://s3.wasabisys.com/beta1/elcomercio/2020/6/que-heredaste-de-papa/index.html)
 
 ## Herramientas
